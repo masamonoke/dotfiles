@@ -1,0 +1,6 @@
+[submodule "neovim-config"]
+	path = neovim-config
+	url = https://github.com/masamonoke/neovim-config
+[submodule "alacritty-config"]
+	path = alacritty-config
+	url = https://github.com/masamonoke/alacritty-config
