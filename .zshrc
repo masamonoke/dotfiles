@@ -123,5 +123,8 @@ bindkey '^[[1;2D' backward-word
 export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
 export PATH="$PATH:/Users/markrudakov/.dotnet/tools"
 
-export CC=/opt/homebrew/opt/llvm/bin/clang
-export CXX=/opt/homebrew/opt/llvm/bin/clang++
+alias cats='pygmentize -f terminal256 -g'
+
+export PATH="/Users/markrudakov/.local/bin:$PATH"
+
+[ -f "/Users/markrudakov/.ghcup/env" ] && . "/Users/markrudakov/.ghcup/env" # ghcup-env
