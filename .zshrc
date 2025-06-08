@@ -128,3 +128,16 @@ alias cats='pygmentize -f terminal256 -g'
 export PATH="/Users/markrudakov/.local/bin:$PATH"
 
 [ -f "/Users/markrudakov/.ghcup/env" ] && . "/Users/markrudakov/.ghcup/env" # ghcup-env
+
+export VULKAN_SDK=~/VulkanSDK/1.4.313.0/macOS
+export PATH=$VULKAN_SDK/bin:$PATH
+export DYLD_LIBRARY_PATH=$VULKAN_SDK/lib:$DYLD_LIBRARY_PATH
+export VK_ICD_FILENAMES=$VULKAN_SDK/share/vulkan/icd.d/MoltenVK_icd.json
+export VK_LAYER_PATH=$VULKAN_SDK/share/vulkan/explicit_layer.d
+
+export PATH="$PATH:/Users/markrudakov/bin/depot_tools:$PATH"
+
+export GTEST_ROOT=$(brew --prefix googletest)
+export CPLUS_INCLUDE_PATH="$GTEST_ROOT/include:$CPLUS_INCLUDE_PATH"
+export LIBRARY_PATH="$GTEST_ROOT/lib:$LIBRARY_PATH"
+export DYLD_LIBRARY_PATH="$GTEST_ROOT/lib:$DYLD_LIBRARY_PATH"  # macOS
